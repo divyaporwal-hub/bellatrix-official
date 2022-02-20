@@ -1,0 +1,523 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+    vertical-align: baseline;
+    box-sizing: border-box;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+    background: #eddcd2;
+    font-family: "Montserrat", sans-serif;
+    overflow-x: hidden !important;
+}
+
+html {
+    overflow-x: hidden !important;
+}
+
+.mb-md-5,
+.my-md-5 {
+    margin-bottom: 3rem !important;
+}
+
+.mt-4,
+.my-4 {
+    margin-top: 1.5rem !important;
+}
+/*navbar*/
+
+/* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+.sticky + .content {
+    padding-top: 60px;
+}
+/* Remove border color from the collapsible button */
+
+/*New nav*/
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+.nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+}
+
+.nav-link {
+    display: block;
+    padding: 0.5rem 1rem;
+}
+
+    .nav-link:hover,
+    .nav-link:focus {
+        text-decoration: none;
+    }
+
+    .nav-link.disabled {
+        color: #6c757d;
+    }
+
+.nav-pills .nav-link {
+    border-radius: 0.25rem;
+}
+
+    .nav-pills .nav-link.active,
+    .nav-pills .show > .nav-link {
+        color: #f5cac3;
+        background-color: #78d5ef;
+    }
+
+.nav-fill .nav-item {
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    text-align: center;
+}
+
+.nav-justified .nav-item {
+    -ms-flex-preferred-size: 0;
+    flex-basis: 0;
+    -webkit-box-flex: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    text-align: center;
+}
+
+.topnav-right {
+    float: right;
+}
+.navbar {
+    margin-bottom: 0;
+    background-color: #022b3a !important;
+    border: 0;
+    font-size: 13px !important;
+    /*letter-spacing: 4px;*/
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    position: fixed;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    opacity: 1 !important;
+}
+
+.navbar-toggle .icon-bar {
+    background-color: #eddcd2;
+}
+
+
+    .navbar-brand:focus {
+        text-decoration: none;
+    }
+
+    .navbar-brand:hover,
+    .navbar-brand {
+        font-weight: 1000;
+        padding-right: 20px;
+    }
+/* Add color to all navbar links */
+.navbar li a,
+.navbar  {
+    /*color: #d5d5d5 !important;*/
+    color: #f5cac3;
+    font-weight: 500;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+/* On hover*/
+.navbar-nav li a:hover {
+    color: #f6bd60 !important;
+    background-color: #022b3a !important;
+}
+
+
+/* The active link */
+.navbar-nav li.active a {
+    color: #f4f4f4 !important;
+    /*background-color: #151111 !important;*/
+}
+
+
+/* Footer */
+.contact-us {
+    font-size: 16px;
+    padding: 7em 0;
+    background: #022b3a;
+}
+
+    .contact-us .ftco-footer-logo {
+        text-transform: uppercase;
+        letter-spacing: .1em;
+    }
+
+    .contact-us .ftco-footer-widget h2 {
+        font-weight: normal;
+        color: #f5cac3;
+        margin-bottom: 40px;
+        font-size: 16px;
+        font-weight: 400;
+        position: relative;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+    }
+
+    .contact-us .ftco-footer-widget ul li a span {
+        color: #f4f4f4;
+    }
+
+    .contact-us .ftco-footer-widget .btn-primary {
+        background: #eddcd2 !important;
+        border: 2px solid #fff !important;
+    }
+
+        .contact-us .ftco-footer-widget .btn-primary:hover {
+            background: #fff;
+            border: 2px solid #fff !important;
+        }
+
+    .contact-us p {
+        color: rgba(255, 255, 255, 0.7);
+    }
+
+    .contact-us a {
+        color: rgba(255, 255, 255, 0.7);
+    }
+
+        .contact-us a:hover {
+            color: #fff;
+        }
+
+    .contact-us .ftco-heading-2 {
+        font-size: 17px;
+        font-weight: 400;
+        color: #000;
+    }
+
+    .contact-us .block-21 .text .heading {
+        font-size: 16px;
+        font-weight: 300;
+    }
+
+        .contact-us .block-21 .text .heading a {
+            color: rgba(255, 255, 255, 0.9);
+        }
+
+            .contact-us .block-21 .text .heading a:hover,
+            .contact-us .block-21 .text .heading a:active,
+            .contact-us.block-21 .text .heading a:focus {
+                color: #c49b63;
+            }
+
+    .contact-us .block-21 .text .meta > div {
+        display: inline-block;
+        font-size: 12px;
+        margin-right: 5px;
+    }
+
+        .contact-us .block-21 .text .meta > div a {
+            color: gray;
+        }
+
+.ftco-footer-social li {
+    list-style: none;
+    margin: 0 10px 0 0;
+    display: inline-block;
+}
+
+    .ftco-footer-social li a {
+        height: 50px;
+        width: 50px;
+        display: block;
+        float: left;
+        background: rgba(255, 255, 255, 0.05);
+        border-radius: 50%;
+        position: relative;
+    }
+
+        .ftco-footer-social li a span {
+            position: absolute;
+            font-size: 26px;
+            top: 50%;
+            left: 50%;
+            -webkit-transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+        }
+
+        .ftco-footer-social li a:hover {
+            color: #fff;
+        }
+
+.block-23 ul {
+    padding: 0;
+}
+
+    .block-23 ul li,
+    .block-23 ul li > a {
+        display: table;
+        line-height: 1.5;
+        margin-bottom: 15px;
+    }
+
+        .block-23 ul li span {
+            color: rgba(255, 255, 255, 0.7);
+        }
+
+        .block-23 ul li .icon,
+        .block-23 ul li .text {
+            display: table-cell;
+            vertical-align: top;
+        }
+
+        .block-23 ul li .icon {
+            width: 40px;
+            font-size: 18px;
+            padding-top: 2px;
+            color: white;
+        }
+
+footer {
+    position: fixed;
+    bottom: 0;
+    font-size: 16px;
+    padding-top: 0em;
+    padding-bottom: 6em;
+    margin-top: -3em;
+}
+
+    footer .glyphicon {
+        font-size: 20px;
+        margin-top: 30px;
+        margin-bottom: 20px;
+        color: #c49b63;
+    }
+
+    footer p {
+        color: rgba(255, 255, 255, 0.7);
+    }
+
+    footer a {
+        color: rgba(255, 255, 255, 0.7);
+    }
+
+        footer a:hover {
+            color: #fff;
+        }
+
+.mb-4 {
+    margin-bottom: 1.5rem !important;
+}
+
+.mb-5,
+.my-5 {
+    margin-bottom: 3rem !important;
+}
+
+@media screen and (max-width: 768px) {
+    .col-sm-4 {
+        text-align: center;
+        margin: 25px 0;
+    }
+}
+.justify-content-center {
+    -webkit-box-pack: center !important;
+    -ms-flex-pack: center !important;
+    justify-content: center !important;
+}
+.align-items-center {
+    -webkit-box-align: center !important;
+    -ms-flex-align: center !important;
+    align-items: center !important;
+}
+section{
+    position: relative;
+    min-height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+section .container2
+{
+    position: relative;
+    min-height: 20vh;
+    display: flex;
+    background: #fff;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 800px;
+    height: 500px;
+    overflow: hidden;    
+}
+section .container2 .user{
+    position: absolute;
+    top: 0;
+    left:0;
+    width:100%;
+    height:100%;
+    display: flex;
+}
+section .container2 .user .imgBx{
+    position: relative;
+    width: 50%;
+    height: 100%;
+    background: #fff;
+    transition: 0.5s;
+}
+section .container2 .user .imgBx img{
+    position: absolute;
+    top: 0;
+    left:0;
+    width:100%;
+    height:100%;
+    object-fit: cover;
+}
+section .container2 .user .formBx{
+    position: relative;
+    width:50%;
+    height: 100%;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    transition: 0.5s;
+}
+section .container2 .user .formBx form h2{
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-align: center;
+    width:100%;
+    margin-bottom: 10px;
+    color: #555;
+}
+section .container2 .user .formBx form input{
+    position: relative;
+    width: 100%;
+    padding: 10px;
+    background: #f5f5f5;
+    color: #333;
+    border: none;
+    outline: none;
+    box-shadow: none;
+    margin: 8px 0;
+    font-size: 14px;
+    letter-spacing: 1px;
+    font-weight: 300;
+}
+section .container2 .user .formBx form input[type="submit"]
+{
+    max-width: 100px;
+    background: #022b3a;
+    color: #fff;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    transition: 0.5s;
+}
+section .container2 .user .formBx form .signup
+{
+    position: relative;
+    margin-top: 20px;
+    font-size: 12px;
+    letter-spacing: 1px;
+    color: #555;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+section .container2 .user .formBx form .signup a
+{
+    font-weight: 600;
+    text-decoration: none;
+    color: #677eff;
+}
+section .container2 .signupBx
+{
+    pointer-events: none;
+}
+section .container2.active .signupBx
+{
+    pointer-events: initial;
+}
+section .container2 .signupBx .formBx
+{
+    left: 100%;
+}
+section .container2.active .signupBx .formBx
+{
+    left: 0;
+}
+section .container2 .signupBx .imgBx
+{
+    left: -100%;
+}
+section .container2.active .signupBx .imgBx
+{
+    left: 0;
+}
+
+
+section .container2 .signinBx .formBx
+{
+    left: 0;
+}
+section .container2.active .signinBx .formBx
+{
+    left: 100%;
+}
+section .container2 .signinBx .imgBx
+{
+    left: 0;
+}
+section .container2.active .signinBx .imgBx
+{
+    left: -100%;
+}
+
+
+@media(max-width: 768px)
+{
+    section .container2
+    {
+        max-width: 440px;
+    }
+    section .container2 .imgBx
+    {
+        display: none;
+    }
+    section .container2 .user .formBx
+    {
+        display: 100%;
+    }
+}

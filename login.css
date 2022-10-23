@@ -402,6 +402,7 @@ section .container2 .user .imgBx img{
 }
 section .container2 .user .formBx{
     position: relative;
+     flex: 1;    /*allows a div element ot pic as much available as possible */
     width:50%;
     height: 100%;
     background: #fff;
@@ -420,6 +421,9 @@ section .container2 .user .formBx form h2{
     width:100%;
     margin-bottom: 10px;
     color: #555;
+}
+.container2 {
+    margin-inline : 20px
 }
 section .container2 .user .formBx form input{
     position: relative;

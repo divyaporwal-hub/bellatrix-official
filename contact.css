@@ -402,6 +402,7 @@ section .container2 .user .imgBx img{
 }
 section .container2 .user .formBx{
     position: relative;
+    flex: 1;  
     width:50%;
     height: 100%;
     background: #fff;
@@ -410,6 +411,9 @@ section .container2 .user .formBx{
     align-items: center;
     padding: 40px;
     transition: 0.5s;
+}
+.container2 {
+    margin-inline : 20px
 }
 section .container2 .user .formBx form h2{
     font-size: 18px;

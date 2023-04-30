@@ -1,7 +1,7 @@
 const mongoose = require("mongoose");
 mongoose.set("strictQuery", true);
 
-mongoose.connect("mongodb+srv://divyaporwal100:qwerty123456789@cluster0.merlja9.mongodb.net/userdata?retryWrites=true&w=majority",
+mongoose.connect("mongodb+srv://divyaporwal100:********@cluster0.merlja9.mongodb.net/userdata?retryWrites=true&w=majority",
   {
     useNewUrlParser: true,
     useUnifiedTopology: true, 

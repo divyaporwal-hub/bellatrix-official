@@ -1,13 +1,11 @@
 const mongoose = require("mongoose");
 mongoose.set("strictQuery", true);
+require("dotenv").config();
 
-mongoose.connect(
-  "mongodb+srv://divyaporwal100:qwerty123456789@cluster0.merlja9.mongodb.net/userdata?retryWrites=true&w=majority",
-  {
-    useNewUrlParser: true,
-    useUnifiedTopology: true,
-  }
-);
+mongoose.connect(process.env.MONGO_URL, {
+  useNewUrlParser: true,
+  useUnifiedTopology: true,
+});
 
 mongoose.connection.on("error", (err) => {
   console.log("Connection failed");

@@ -13,16 +13,8 @@ const UserSchema = new mongoose.Schema({
   fullName: {
     type: String,
     required: true,
-  },
-  userName: {
-    type: String,
-    required: true,
-  },
-  userOtp: {
-    type: String,
-  },
+  }
 });
 
-// UserSchema.plugin(uniqueValidator);
 const User = mongoose.model("users", UserSchema);
 module.exports = User;

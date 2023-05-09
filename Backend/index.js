@@ -8,6 +8,10 @@ app.use(express.json());
 app.use(cors());
 const userRouter = require("./routes/user.js");
 app.use("/user", userRouter);
+app.get("/", (req,res)=>
+{
+  res.send("Divya");
+})
 
 app.listen(8000, () => {
   console.log("Server is running...");

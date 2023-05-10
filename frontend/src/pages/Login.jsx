@@ -9,7 +9,7 @@ import { useNavigate } from "react-router-dom";
 function Login() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-  const navigate=useNavigate();
+  const navigate = useNavigate();
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -20,25 +20,22 @@ function Login() {
           userPassword: password,
         },
       });
-      if(response.data.length) 
-      {
-        localStorage.setItem(
-            "userInfo",JSON.stringify(response.data)
-        )
-         navigate("/");
+      if (response.data.length) {
+        localStorage.setItem("userInfoBltx", JSON.stringify(response.data[0]));
+        navigate("/");
       }
     } catch (e) {
       console.log(e);
     }
   };
   return (
-    <section>
-      <div class="container2">
-        <div class="user signinBx">
-          <div class="imgBx">
+    <section className="Login">
+      <div className="container2">
+        <div className="user signinBx">
+          <div className="imgBx">
             <img src={Moon} />
           </div>
-          <div class="formBx">
+          <div className="formBx">
             <form onSubmit={handleSubmit}>
               <h2>Sign In</h2>
               <input
@@ -61,7 +58,7 @@ function Login() {
               <br />
               <input type="submit" name="" value="Login" />
               <br />
-              <p class="signup">
+              <p className="signup">
                 Don't have an account ?<Link to="/signup">Signup</Link>
               </p>
             </form>

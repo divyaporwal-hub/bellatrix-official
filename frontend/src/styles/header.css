@@ -1,36 +1,61 @@
+section {
+  display: flex;
+  width: 100vw;
+}
+
+.navbar-collapse {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
 .navbar {
-    background-color: #343a40;
-  }
-  
-  .navbar-brand {
-    font-size: 35px;
-    line-height: 2;
-    font-weight: 550;
-    font-family: Montserrat, sans-serif;
-    padding-left: 40px;
-  }
-  
-  .navbar-toggler {
-    border: none;
-  }
-  
-  .navbar-toggler-icon {
-    background-color: #fff;
-  }
-  
-  .navbar-nav .nav-item {
-    margin-left: 10px;
-  }
-  
-  .navbar-nav .nav-link {
-    color: #fff;
-    font-family: Montserrat, sans-serif;
-    font-weight: 500;
-    text-transform: uppercase;
-  }
-  
-  .navbar-nav .nav-link:hover,
-  .navbar-nav .nav-link.active {
-    color: #f5c518;
-  }
-  
+  width: 100%;
+  display: flex;
+  background-color: #022b3a !important;
+}
+
+.navbar-nav {
+  display: flex;
+  width: 97%;
+  list-style-type: none;
+  justify-content: flex-end;
+}
+
+.navbar-brand {
+  font-size: 35px;
+  line-height: 2;
+  font-weight: 550;
+  font-family: Montserrat, sans-serif;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  justify-content: center;
+}
+
+.navbar-toggler {
+  border: none;
+}
+
+.navbar-toggler-icon {
+  background-color: #fff;
+}
+
+.navbar-nav .nav-item {
+  margin-left: 10px;
+}
+
+.navbar-nav .nav-link {
+  color: #fff;
+  font-family: Montserrat, sans-serif;
+  font-weight: 500;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #f5cac3;
+  /* background-color: #78d5ef; */
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.active {
+  color: #f4f4f4;
+}

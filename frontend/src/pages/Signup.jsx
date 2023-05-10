@@ -10,7 +10,7 @@ function Signup() {
   const [fullName, setFullName] = useState("");
   const [password, setPassword] = useState("");
   const [cnfPassword, setCnfPassword] = useState("");
-  const navigate=useNavigate();
+  const navigate = useNavigate();
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
@@ -26,7 +26,7 @@ function Signup() {
     }
   };
   return (
-    <section>
+    <section className="Login">
       <div class="container2">
         <div class="user signinBx">
           <div class="imgBx">

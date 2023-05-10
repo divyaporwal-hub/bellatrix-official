@@ -1,14 +1,16 @@
 import React, { useState } from "react";
 import Tree from "../images/tree.jpg";
 import "../styles/login.css";
-import { Link } from "react-router-dom";
+import { Link, Navigate } from "react-router-dom";
 import axios from "axios";
+import { useNavigate } from "react-router-dom";
 
 function Signup() {
   const [email, setEmail] = useState("");
   const [fullName, setFullName] = useState("");
   const [password, setPassword] = useState("");
   const [cnfPassword, setCnfPassword] = useState("");
+  const navigate=useNavigate();
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
@@ -18,6 +20,7 @@ function Signup() {
         userPassword: password,
       });
       console.log(response);
+      navigate("/login");
     } catch (e) {
       console.log(e);
     }
@@ -36,6 +39,7 @@ function Signup() {
                 type="name"
                 name=""
                 placeholder="Full Name"
+                required
                 onChange={(e) => {
                   setFullName(e.target.value);
                 }}
@@ -45,6 +49,7 @@ function Signup() {
                 type="email"
                 name=""
                 placeholder="Email Address"
+                required
                 onChange={(e) => {
                   setEmail(e.target.value);
                 }}
@@ -54,6 +59,7 @@ function Signup() {
                 type="password"
                 name=""
                 placeholder="Create password"
+                required
                 onChange={(e) => {
                   setPassword(e.target.value);
                 }}
@@ -63,6 +69,7 @@ function Signup() {
                 type="password"
                 name=""
                 placeholder="Confirm Password"
+                required
                 onChange={(e) => {
                   setCnfPassword(e.target.value);
                 }}
